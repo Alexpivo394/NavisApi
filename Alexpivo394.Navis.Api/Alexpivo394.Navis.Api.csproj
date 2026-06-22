@@ -1,0 +1,30 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <NavisFramework Condition="'$(NavisFramework)' == ''">net48</NavisFramework>
+        <TargetFramework>$(NavisFramework)</TargetFramework>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <NoWarn>$(NoWarn);NU5131</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageType>Dependency</PackageType>
+        <Authors>Alexpivo394</Authors>
+        <Description>Library for Navisworks plugin development</Description>
+        <PackageTags>api;autodesk;navisworks</PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/Alexpivo394/NavisApi</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Alexpivo394/NavisApi</PackageProjectUrl>
+        <PackageIcon>images\PackageIcon.png</PackageIcon>
+        <PackageLicenseFile>License.md</PackageLicenseFile>
+        <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\.nuget\PackageIcon.png" PackagePath="images\" Pack="true"/>
+        <None Include="..\License.md" PackagePath="" Pack="true"/>
+        <None Include="..\Readme.md" PackagePath="" Pack="true"/>
+        <Content Include="Content\$(Version)\$(LibraryName).*" PackagePath="ref\$(TargetFramework)\"/>
+    </ItemGroup>
+
+</Project>
