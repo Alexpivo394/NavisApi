@@ -12,6 +12,13 @@ The package version matches the Navisworks release, e.g. use `2024.*` for Navisw
 
 Didn't find the library you need? [Tell me](https://github.com/Alexpivo394/NavisApi/issues/new)
 
+## Acknowledgements
+
+Special thanks to [Nice3Point](https://github.com/Nice3point) for the valuable advice and code contribution that helped improve this project.
+
+His work around Revit API development, open-source tooling, and developer experience is a huge source of inspiration for this repository.
+
+
 ## Autodesk.Navisworks.Api
 
 [![Nuget](https://img.shields.io/nuget/vpre/Alexpivo394.Navis.Api.Autodesk.Navisworks.Api?style=for-the-badge)](https://www.nuget.org/packages/Alexpivo394.Navis.Api.Autodesk.Navisworks.Api)
